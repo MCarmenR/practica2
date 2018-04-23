@@ -109,7 +109,7 @@ double potencia(double val, double exp)
 	
 	for(i = 0; i < exp; i++)
 	{
-		total += multiplicacion(val,exp);
+		total += multiplicacion(val,val);
 	}
 	return total;
 }
