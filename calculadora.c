@@ -90,6 +90,7 @@ int main(int argc, char **argv)
 
 
 
+
 double multiplicacion(double a, double b){
 	return a*b;
 }
@@ -131,3 +132,7 @@ while(multiplicacion(resu,resu)<=a)
 return resu-1;
 }
 
+double iva(double val, double iv){
+
+	return  suma(val,multiplicacion(val, iv));
+}
