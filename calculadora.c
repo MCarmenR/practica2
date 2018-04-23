@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-
-int multiplicacion(int a, int b){
-	int resultado = 0;
-	int i;
-	for (i = 0; i < b; i++){
-		i = i + a;
+int potencia(int base, int exponente)
+{
+	int i, total;
+	
+	for(i = 0; i < exponente; i++)
+	{
+		total += multiplcacion(base,base);
 	}
-	return resultado;
+	return total;
 }
 
 int main(int argc, char **argv)
@@ -46,7 +47,7 @@ int main(int argc, char **argv)
 				result = a - b;
 				break;
 			case 3:
-				result = multiplicacion(a,b);
+				result = 0;
 				break;
 			case 4:
 				result = 0;
@@ -55,7 +56,19 @@ int main(int argc, char **argv)
 				result = 0;
 				break;
 			case 6:
-				result = 0;
+				printf("\n         -> Introduzca el numero que hara de base: ");  /* Introducimos los datos */
+
+				scanf("%i",&a);
+
+				printf("\n         -> Introduzca el exponente: ");
+
+				scanf("%i",&b);
+
+				resultado = potencia(a,b);
+			
+			
+			
+				printf("\n         El resultado de %i^%i es %i",a,b,resultado);
 				break;
 			default:
 				result = 0;
