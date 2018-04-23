@@ -125,7 +125,7 @@ double suma(double a, double b){
 }
 
 double raiz(double a){
-resu = 1;
+double resu = 1;
 while(multiplicacion(resu,resu)<=a)
 	resu+=1;
 
