@@ -99,7 +99,7 @@ double division(double a, double b){
 	return a / b;	
 }
 double conversor(double euros) {
-	return multiplicacion(euros,166.386);
+	return euros*166.386;
 }
 
 double potencia(double val, double exp)
@@ -109,7 +109,7 @@ double potencia(double val, double exp)
 	
 	for(i = 0; i < exp; i++)
 	{
-		total += multiplicacion(val,exp);
+		total += multiplicacion(val,val);
 	}
 	return total;
 }
