@@ -88,6 +88,32 @@ int main(int argc, char **argv)
 }
 
 
+
+
+
+double multiplicacion(double a, double b){
+	return a*b;
+}
+
+double division(double a, double b){
+	return a / b;	
+}
+double conversor(double euros) {
+	return euros*166.386;
+}
+
+double potencia(double val, double exp)
+{
+	int i;
+	double total;
+	
+	for(i = 0; i < exp; i++)
+	{
+		total += multiplicacion(val,exp);
+	}
+	return total;
+}
+
 double resta(double a, double b){
  double resultado = 0;
  resultado = a - b;
@@ -98,12 +124,12 @@ double suma(double a, double b){
 	return a+b;
 }
 
-double multiplicacion(double a, double b){
-	return a*b;
-}
+double raiz(double a){
+resu = 1;
+while(multiplicacion(resu,resu)<=a)
+	resu+=1;
 
-double division(double a, double b){
-	return a / b;	
+return resu-1;
 }
 
 double iva(double val, double iv){
