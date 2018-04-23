@@ -88,18 +88,6 @@ int main(int argc, char **argv)
 }
 
 
-double potencia(double val, double exp)
-{
-	int i;
-	double total;
-	
-	for(i = 0; i < exponente; i++)
-	{
-		total += multiplcar(base,base);
-	}
-	return total;
-}
-
 double resta(double a, double b){
  double resultado = 0;
  resultado = a - b;
@@ -116,4 +104,9 @@ double multiplicacion(double a, double b){
 
 double division(double a, double b){
 	return a / b;	
+}
+
+double iva(double val, double iv){
+
+	return  suma(val,multiplicacion(val, iv));
 }
