@@ -105,11 +105,11 @@ double conversor(double euros) {
 double potencia(double val, double exp)
 {
 	int i;
-	double total;
+	double total = val;
 	
 	for(i = 0; i < exp; i++)
 	{
-		total += multiplicacion(val,val);
+		total = multiplicacion(total,val);
 	}
 	return total;
 }
